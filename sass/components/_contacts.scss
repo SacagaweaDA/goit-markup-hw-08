@@ -1,0 +1,49 @@
+.contacts {
+  display: flex;
+  // gap: 50px;
+  margin-left: auto;
+
+  @include mq(mob-only) {
+    display: none;
+  }
+
+  @include mq(tab-only) {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @include mq(desc) {
+    gap: 30px;
+  }
+}
+
+.contacts__link {
+  color: $primaryTextColor;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @include mq(desc) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contacts__item:first-child {
+  @include mq(tab-only) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
+}

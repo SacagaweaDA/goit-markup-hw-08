@@ -1,0 +1,38 @@
+.work {
+  @include mq(noDesc) {
+    display: none;
+  }
+  @include mq(desc) {
+    $cardItem: 3;
+  }
+}
+
+.work__list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+.work__item {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.work__description {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 27px 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: $additionalTextColor;
+}

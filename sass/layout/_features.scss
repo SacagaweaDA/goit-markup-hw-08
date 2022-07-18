@@ -1,0 +1,62 @@
+.features__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  $cardItem: 1;
+
+  @include mq(tab) {
+    $cardItem: 2;
+  }
+  @include mq(desc) {
+    $cardItem: 4;
+    flex-wrap: nowrap;
+  }
+}
+
+.features__item {
+  width: 100%;
+
+  @include mq(mob) {
+    width: 450px;
+  }
+  @include mq(tab) {
+    width: 354px;
+  }
+  @include mq(desc) {
+    width: 270px;
+    min-height: 227px;
+  }
+}
+
+.features__title {
+  color: $titleTextColor;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  margin-bottom: 10px;
+  @include mq(mob-only) {
+    text-align: center;
+  }
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primaryTextColor;
+  text-align: left;
+}
+
+.features__bg {
+  width: 100%;
+  min-height: 120px;
+  background-color: $teamSectionColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+// .clients
+//   padding-bottom: 94px;

@@ -1,0 +1,90 @@
+.footer {
+  background-color: $heroSectionColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer--display {
+  @include mq(desc) {
+    display: flex;
+    //   align-items: baseline;
+  }
+}
+
+// .footer--wrapper {
+//   width: 231px;
+// }
+
+.footer__address {
+  @include mq(noDesc) {
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $contactsTextColor;
+}
+
+.address__street {
+  margin-bottom: 9px;
+  color: $additionalTextColor;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  text-decoration: none;
+}
+
+.footer__tab {
+  @include mq(tab-only) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @include mq(desc) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.join {
+  margin-left: 70px;
+  padding-top: 12px;
+  @include mq(noDesc) {
+    text-align: center;
+  }
+
+  @include mq(mob-only) {
+    margin: 60px 0;
+  }
+
+  @include mq(desc) {
+    margin-left: 70px;
+  }
+}
+
+.join__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $additionalTextColor;
+}
+
+.soc-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}

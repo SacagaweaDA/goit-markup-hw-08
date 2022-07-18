@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__list {
+  display: flex;
+  @include mq(mob-only) {
+    display: none;
+  }
+}
+
+.nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  @include mq(mob-only) {
+    display: none;
+  }
+}
+
+.nav__link {
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @include mq(mob-only) {
+    display: none;
+  }
+}

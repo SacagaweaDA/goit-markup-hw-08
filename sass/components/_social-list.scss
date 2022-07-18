@@ -1,0 +1,40 @@
+.soc-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-icons__item {
+  width: 44px;
+  height: 44px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.soc-icons__svg {
+  fill: $iconsColor;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .soc-icons__link:hover &,
+  .soc-icons__link:focus & {
+    fill: $additionalTextColor;
+  }
+}
+
+.soc-icons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}

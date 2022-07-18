@@ -1,0 +1,87 @@
+.subscription {
+  @include mq(noDesc) {
+    text-align: center;
+  }
+  @include mq(desc) {
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
+
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $additionalTextColor;
+}
+
+.subscription__wrapper {
+  @include mq(noDesc) {
+    text-align: center;
+  }
+  @include mq(desc) {
+    display: flex;
+  }
+}
+
+.subscription__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 295px 15px 16px;
+  width: 358px;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  width: 100%;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include mq(mob) {
+    width: 450px;
+  }
+  @include mq(tab) {
+    width: 450px;
+  }
+  @include mq(desc) {
+    width: 358px;
+  }
+  @include mq(noDesc) {
+    margin-bottom: 20px;
+  }
+}
+
+.subscription__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $accentColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $additionalTextColor;
+  padding: 10px 28px 10px 29px;
+  @include mq(noDesc) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(desc) {
+    margin-left: 12px;
+  }
+}
+
+.subscription-icon {
+  margin-left: 10px;
+}

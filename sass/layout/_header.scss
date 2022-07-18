@@ -1,0 +1,30 @@
+.header {
+  background: $backgroundColor;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+
+  @include mq(mob-only) {
+    position: relative;
+    height: 60px;
+  }
+}
+
+.current {
+  color: $accentColor;
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: $accentColor;
+  border-radius: 2px;
+  opacity: 1;
+  height: 4px;
+  width: 100%;
+  bottom: -1px;
+}
