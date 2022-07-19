@@ -1,10 +1,14 @@
 .subscription {
+  @include mq(mob-only) {
+    text-align: center;
+    margin-top: 60px;
+  }
+
   @include mq(noDesc) {
     text-align: center;
   }
   @include mq(desc) {
     margin-left: 93px;
-    padding-top: 12px;
   }
 }
 
@@ -36,14 +40,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  padding: 15px 295px 15px 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   width: 358px;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
   width: 100%;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
 
   @include mq(mob) {
     width: 450px;
